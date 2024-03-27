@@ -64,7 +64,7 @@ export const CardProduct = ({ id, name = 'Citrate Mag', likes = 22, discount = 3
             </button>
           </div>
         </div>
-        <button onClick={(e) => handleNewProduct(e, id, name, images[0], discountPrice, realPrice, presentation)} className='w-[90px] h-[31px] border border-solid border-[#EDA836] bg-white rounded-[20px] hover:border-white hover:bg-[#EDA836] transition-colors duration-200 ease-in-out cursor-pointer'>
+        <button onClick={(e) => handleNewProduct(e, id, name, images[0], discountPrice, realPrice, presentation)} className='w-[90px] h-[31px] border border-solid border-[#EDA836] bg-white rounded-[20px] text-black text-[12px] font-bold hover:border-white hover:bg-[#EDA836] transition-colors duration-200 ease-in-out cursor-pointer'>
           Agregar
         </button>
       </div>
