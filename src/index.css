@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap')
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0px;
+}
+
+.carousel-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-dots {
+  width: 84px !important;
+  height: 32px;
+  border: 1px solid #E1E1E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 20px;
+}
+
+.control-dots > .selected {
+  background: #22212C !important;
+  box-shadow: none !important;
+}
+
+.control-dots > .dot {
+  background: #22212C !important;
+  opacity: 20%;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1024px) {
+  .control-dots {
+    bottom: 0px !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .control-dots {
+    bottom: 10px !important;
+  }
+}
